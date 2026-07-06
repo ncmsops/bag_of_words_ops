@@ -8,14 +8,14 @@ line so they stay clickable in any client.
 
 from typing import List, Optional, Tuple
 
-SIGNATURE = "BOW"
+SIGNATURE = "InsightX"
 
 
 def invite_email(sign_up_url: str) -> Tuple[str, str]:
-    subject = "Your team invited you to BOW"
+    subject = "Your team invited you to InsightX"
     body = (
         "Hi,\n\n"
-        "Your team is using BOW to work with their data -- asking questions, "
+        "Your team is using InsightX to work with their data -- asking questions, "
         "running analyses and building dashboards or automations, all just by "
         "typing what they want in plain language. They've invited you to join them.\n\n"
         "Set up your account here:\n"
@@ -27,7 +27,7 @@ def invite_email(sign_up_url: str) -> Tuple[str, str]:
 
 
 def welcome_email(name: Optional[str], agent_names: List[str], app_url: str) -> Tuple[str, str]:
-    subject = f"Welcome to BOW, {name}!" if name else "Welcome to BOW"
+    subject = f"Welcome to InsightX, {name}!" if name else "Welcome to InsightX"
     greeting = f"Hi {name}," if name else "Hi,"
 
     if agent_names:
@@ -47,7 +47,7 @@ def welcome_email(name: Optional[str], agent_names: List[str], app_url: str) -> 
 
     body = (
         f"{greeting}\n\n"
-        "Welcome to BOW! It's where you can ask questions about your data, run "
+        "Welcome to InsightX! It's where you can ask questions about your data, run "
         "analyses and build dashboards or automations -- just by typing what you "
         "want in plain language.\n\n"
         f"{agents_block}\n\n"
